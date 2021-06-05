@@ -46,7 +46,7 @@ class ImgGen:
         return randint(minKbs, maxKbs)
 
     def getRandBlock(self):
-        size = 1024*2**self.getRandKbs()
+        size = 1024*2**0 #self.getRandKbs()
         randData = os.urandom(size)
         return randData
 
